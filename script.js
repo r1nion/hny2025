@@ -1,10 +1,12 @@
 // 暗号の正しい答え
 const correctAnswer = "bananaisbeautiful";
 
-// フォームと結果表示要素を取得
+// フォームとヒントボタン、結果表示要素を取得
 const form = document.getElementById("decode-form");
 const userInput = document.getElementById("user-input");
+const hintButton = document.getElementById("hint-button");
 const result = document.getElementById("result");
+const hint = document.getElementById("hint");
 
 // フォーム送信イベント
 form.addEventListener("submit", (event) => {
@@ -15,7 +17,7 @@ form.addEventListener("submit", (event) => {
 
   // 判定処理
   if (userAnswer === correctAnswer) {
-    result.textContent = "正解! Happy New Year!!!\n2025年もよろしくね!!!";
+    result.textContent = "正解!\nHappy New Year!!!\n2025年もよろしくね!!!";
     result.style.color = "green";
   } else {
     result.textContent = "なんか違うかも、？";
@@ -24,4 +26,9 @@ form.addEventListener("submit", (event) => {
 
   // 入力フィールドをクリア
   userInput.value = "";
+});
+
+// ヒントボタンクリックイベント
+hintButton.addEventListener("click", () => {
+  hint.textContent = "ヒント:\nどうしてもわからなかったらLINEしてね☆\nシーザー暗号：一定でずらして暗号化し、暗号文を同じだけ逆にずらして復号する暗号方法。";
 });

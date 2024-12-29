@@ -15,12 +15,14 @@ body {
 .container {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
   text-align: center;
   width: 90%;
-  max-width: 400px;
+  margin: 0 auto;
+  max-width: 800px;
 }
+
 
 /* ヘッダー */
 h1 {
@@ -32,13 +34,26 @@ h1 {
 /* 入力グループ */
 .input-group {
   margin-bottom: 15px;
-  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+/* 画像がウィンドウ幅に合わせて調整されるよう設定 */
+.responsive-image {
+  display: block;
+  max-width: 100%; /* ウィンドウ幅に合わせて調整 */
+  height: auto;    /* アスペクト比を保持 */
+  margin: 0 auto;  /* 中央揃え */
 }
 
-label {
+/* その他のデザイン */
+#hint {
+  white-space: pre-line;
+  margin-top: 15px;
   font-size: 14px;
-  color: #666;
+  color: #868686;
 }
+
+
 
 input[type="text"] {
   width: 100%;
@@ -52,23 +67,25 @@ input[type="text"] {
 
 /* ボタン */
 button {
-  background: #0078D7;
-  color: #fff;
+  background: #ffffff;
+  color: #828282;
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 120, 215, 0.3);
+  box-shadow: 0 4px 4px rgba(46, 46, 46, 0.3);
   transition: background 0.3s ease;
+  margin-bottom: 15px;
 }
 
 button:hover {
-  background: #005BB5;
+  background: #ececec;
 }
 
 /* 結果表示 */
 #result {
+  white-space: pre-line;
   margin-top: 20px;
   font-size: 16px;
   font-weight: bold;

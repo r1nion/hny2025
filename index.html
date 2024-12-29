@@ -8,14 +8,16 @@
 </head>
 <body>
   <div class="container">
-    <h1>暗号解読判定</h1>
+    <!-- 問題画像を追加 -->
+    <img id="question-image" src="question.png" alt="問題文" class="responsive-image">
     <form id="decode-form">
       <div class="input-group">
-        <label for="user-input">解読結果を入力：</label>
         <input type="text" id="user-input" placeholder="解読結果を入力してください">
       </div>
       <button type="submit">判定する</button>
     </form>
+    <button id="hint-button">ヒントを見る</button>
+    <p id="hint"></p>
     <p id="result"></p>
   </div>
   <script src="script.js"></script>
