@@ -18,7 +18,7 @@ form.addEventListener("submit", (event) => {
     result.textContent = "正解! Happy New Year!!!\n2025年もよろしくね!!!";
     result.style.color = "green";
   } else {
-    result.textContent = "なんか違うかも、";
+    result.textContent = "なんか違うかも、？";
     result.style.color = "red";
   }
 
