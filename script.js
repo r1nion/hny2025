@@ -17,7 +17,7 @@ form.addEventListener("submit", (event) => {
 
   // 判定処理
   if (userAnswer === correctAnswer) {
-    result.textContent = "正解!\nHappy New Year!!!\n2025年もよろしくね!!!";
+    result.textContent = "正解!\nHappy New Year!!!\n2025年もよろしくね!!!\nぜひ解けたって連絡してね、！";
     result.style.color = "green";
   } else {
     result.textContent = "なんか違うかも、？";
@@ -30,5 +30,13 @@ form.addEventListener("submit", (event) => {
 
 // ヒントボタンクリックイベント
 hintButton.addEventListener("click", () => {
-  hint.textContent = "ヒント:\nどうしてもわからなかったらLINEしてね☆\nシーザー暗号：一定でずらして暗号化し、暗号文を同じだけ逆にずらして復号する暗号方法。";
+  if (hint.textContent === "") {
+    // ヒントを表示
+    hint.textContent = "ヒント:b=0, w=1で隠れてます。\nどうしてもわからなかったらLINEしてね☆\nASCII：7bitずつで一文字を表現する文字コード\nシーザー暗号：一定でずらして暗号化し、暗号文を同じだけ逆にずらして復号する暗号方法。";
+    hintButton.textContent = "ヒントを非表示";
+  } else {
+    // ヒントを非表示
+    hint.textContent = "";
+    hintButton.textContent = "ヒントを見る";
+  }
 });
