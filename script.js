@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
 
   // 判定処理
   if (userAnswer === correctAnswer) {
-    result.textContent = "正解! Happy New Year!!!\nHave a nice 2025!!!";
+    result.textContent = "正解! Happy New Year!!!\n2025年もよろしくね!!!";
     result.style.color = "green";
   } else {
     result.textContent = "なんか違うかも、";
