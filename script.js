@@ -32,11 +32,11 @@ form.addEventListener("submit", (event) => {
 hintButton.addEventListener("click", () => {
   if (hint.textContent === "") {
     // ヒントを表示
-    hint.textContent = "ヒント:b=0, w=1で隠れてます。\nどうしてもわからなかったらLINEしてね☆\nASCII：7bitずつで一文字を表現する文字コード\nシーザー暗号：一定でずらして暗号化し、暗号文を同じだけ逆にずらして復号する暗号方法。";
+    hint.textContent = "ヒント:黒=0, 白=1で隠れてます。\nどうしてもわからなかったらLINEしてね☆\nASCII：7bitずつで一文字を表現する文字コード\nシーザー暗号：一定でずらして暗号化し、暗号文を同じだけ逆にずらして復号する暗号方法。";
     hintButton.textContent = "ヒントを非表示";
   } else {
     // ヒントを非表示
     hint.textContent = "";
-    hintButton.textContent = "ヒントを見る";
+    hintButton.textContent = "ヒントを表示";
   }
 });
