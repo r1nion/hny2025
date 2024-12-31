@@ -15,36 +15,10 @@ form.addEventListener("submit", (event) => {
   // ユーザー入力を取得し、空白を削除して小文字に変換
   const userAnswer = userInput.value.trim().replace(/\s+/g, '').toLowerCase();
 
-  function launchConfetti() {
-    const duration = 2 * 1000; // 2秒間紙吹雪を実行
-    const end = Date.now() + duration;
-  
-    (function frame() {
-      // confetti ライブラリを使用してランダムに紙吹雪を散らす
-      confetti({
-        particleCount: 5,
-        angle: 60,
-        spread: 55,
-        origin: { x: 0 }
-      });
-      confetti({
-        particleCount: 5,
-        angle: 120,
-        spread: 55,
-        origin: { x: 1 }
-      });
-  
-      if (Date.now() < end) {
-        requestAnimationFrame(frame);
-      }
-    })();
-  }
-  
   // 判定処理
   if (userAnswer === correctAnswer) {
     result.textContent = "正解！\n\nあけましておめでとうございます、2025年もよろしくお願いします！\n今年も仲良くしよね！\n\n解いてくれてありがとう、ぜひ解けたよーって連絡してね、！";
     result.style.color = "green";
-    launchConfetti();
   } else {
     result.textContent = "なんか違うかも、？";
     result.style.color = "red";
