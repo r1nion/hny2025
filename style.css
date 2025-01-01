@@ -1,6 +1,7 @@
-/* 全体スタイル */
 body {
-  font-family: "Zen Maru Gothic", serif;;
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 300;
+  font-style: normal;
   background-color: #f9f9f9;
   color: #333;
   margin: 0;
@@ -11,7 +12,6 @@ body {
   height: 100vh;
 }
 
-/* コンテナ */
 .container {
   background: #fff;
   border-radius: 10px;
@@ -23,35 +23,30 @@ body {
   max-width: 800px;
 }
 
-
-/* ヘッダー */
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #444;
-}
-
-/* 入力グループ */
 .input-group {
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
 }
-/* 画像がウィンドウ幅に合わせて調整されるよう設定 */
+
 .responsive-image {
   display: block;
-  max-width: 100%; /* ウィンドウ幅に合わせて調整 */
-  height: auto;    /* アスペクト比を保持 */
-  margin: 0 auto;  /* 中央揃え */
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
-/* その他のデザイン */
 #hint {
   white-space: pre-line;
   margin-top: 15px;
   font-size: 14px;
   color: #868686;
 }
+
+#result{
+  color: #ff9d9d;
+  font-size: large;
+} 
 
 
 
@@ -65,7 +60,6 @@ input[type="text"] {
   font-size: 16px;
 }
 
-/* ボタン */
 button {
   background: #ffffff;
   color: #828282;
@@ -83,11 +77,14 @@ button:hover {
   background: #ececec;
 }
 
-/* 結果表示 */
-#result {
-  white-space: pre-line;
+.hidden {
+  display: none;
+}
+
+.message-img {
+  max-width: 100%;
+  height: auto;
   margin-top: 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
+  margin-left: auto;
+  margin-right: auto;
 }
