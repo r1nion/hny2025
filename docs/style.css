@@ -1,0 +1,80 @@
+/* h1 margin HTML */
+
+body{
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: rgb(255, 255, 255);
+    color: #828282;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h1{
+    margin: 30px;
+}
+
+h2{
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+section{
+    margin: 90px; 
+}
+
+a{
+    color: #444;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    width: 120px;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 2px;
+    text-align: center;
+    color: #fff !important;
+}
+
+.li-html{
+    background-color: rgba(241, 102, 42, 0.7);
+    box-shadow: 0 0 15px rgba(241, 102, 42, 0.3);
+}
+
+.li-css{
+    background-color: rgb(40, 101, 240, 0.7);
+    box-shadow: 0 0 15px rgba(40, 101, 240, 0.3);
+}
+
+.li-js{
+    background-color: rgb(247, 223, 28, 0.7);
+    box-shadow: 0 0 15px rgb(247, 223, 28, 0.3);
+}
+
+.li-gh{
+    background-color: rgb(31, 35, 41, 0.7);
+    box-shadow: 0 0 15px rgba(91, 95, 101, 0.3);
+}

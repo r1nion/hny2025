@@ -1,4 +1,4 @@
-body {
+body{
   font-family: "M PLUS Rounded 1c", serif;
   font-weight: 300;
   font-style: normal;
@@ -12,7 +12,7 @@ body {
   height: 100vh;
 }
 
-.container {
+.container{
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -23,20 +23,20 @@ body {
   max-width: 800px;
 }
 
-.input-group {
+.input-group{
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
 }
 
-.responsive-image {
+.question-img{
   display: block;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
 
-#hint {
+#hint{
   white-space: pre-line;
   margin-top: 15px;
   font-size: 14px;
@@ -48,9 +48,7 @@ body {
   font-size: large;
 } 
 
-
-
-input[type="text"] {
+input[type="text"]{
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -60,7 +58,7 @@ input[type="text"] {
   font-size: 16px;
 }
 
-button {
+button{
   background: #ffffff;
   color: #828282;
   border: none;
@@ -73,18 +71,26 @@ button {
   margin-bottom: 15px;
 }
 
-button:hover {
+button:hover{
   background: #ececec;
 }
 
-.hidden {
+.hidden{
   display: none;
 }
 
-.message-img {
+.message-img{
   max-width: 100%;
   height: auto;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+a{
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  text-decoration: none;
+  color: #828282;
 }

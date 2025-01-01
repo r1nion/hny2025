@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>年賀状</title>
+    </head>
+    <body>
+        <div class="container">
+            <img id="question" class="question-img" src="../docs/assets/question.png" alt="問題文">
+            <img id="message" class="message-img hidden" src="../docs/assets/messsage.png" alt="正解おめでとう！今年もよろしくお願いします。">
+            <p id="result"></p>
+            <form id="decode-form">
+                <div class="input-group">
+                    <input id="user-input" type="text" placeholder="解読結果を入力">
+                </div>
+                <button type="submit">判定する</button>
+            </form>
+            <button id="hint-button">ヒントを表示</button>
+            <p id="hint"></p>
+        </div>
+        <a href="../docs/index.html">ソースコードなどについて</a>
+        <script src="script.js"></script>
+    </body>
+</html>
