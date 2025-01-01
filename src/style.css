@@ -88,9 +88,10 @@ button:hover{
 }
 
 a{
+  font-size: small;
   position: fixed;
   bottom: 20px;
-  right: 40px;
+  right: 20px;
   text-decoration: none;
   color: #828282;
 }
